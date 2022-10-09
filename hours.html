@@ -5,86 +5,74 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="author" content="Patrik Zezulka" />
-    <meta
-      name="description"
-      content="Opening Hours for the Papa's burgers - the best burgers in town."
-    />
+    <meta name="description" content="Opening Hours for the Papa's burgers." />
 
     <link rel="icon" href="favicon.ico" type="image/x-icon" />
+    <link rel="stylesheet" href="css/style.css" />
+    <script src="js/main.js" defer></script>
+
     <title>PB's Opening Hours</title>
-
-    <style>
-      html {
-        font-size: 22px;
-      }
-
-      body {
-        min-height: 100vh;
-        max-width: 800px;
-        margin: 0 auto;
-        padding: 1rem;
-        border-left: 1px solid #333;
-        border-right: 1px solid #333;
-      }
-
-      th,
-      td,
-      caption {
-        border: 1px solid #333;
-        font-family: "Courier New", Courier, monospace;
-        border-collapse: separate;
-        padding: 0.5rem;
-      }
-    </style>
   </head>
   <body>
-    <header>
-      <h1>Papa's Burgers Opening Hours</h1>
+    <header class="header">
+      <h1 class="header__h1">Papa's Burgers</h1>
 
-      <nav aria-label="primary-navigation">
-        <ul>
+      <nav class="header__nav" aria-label="primary-navigation">
+        <ul class="header__ul">
           <!-- <a href="/"> ... also links to main page-->
-          <li><a href="index.html">Home</a></li>
-          <li><a href="index.html#about-pb">About Papa's Burgers</a></li>
-          <li><a href="index.html#our-menu">Our Menu</a></li>
-          <li><a href="contact.html">Contact Us</a></li>
+          <li><a href="/">Home</a></li>
+          <li><a href="/#our-menu">Menu</a></li>
+          <li><a href="contact.html">Contact</a></li>
+          <li><a href="about.html">About</a></li>
         </ul>
-
-        <figure>
-          <img
-            src="img/burger_egg_400x267.jpg"
-            alt="burger with egg"
-            title="Burger with Egg"
-            width="400"
-            height="267"
-          />
-          <figcaption>Burger with Egg</figcaption>
-        </figure>
       </nav>
     </header>
-    <hr />
 
-    <main>
-      <p>We are open 7 days a week!</p>
+    <section class="hero">
+      <figure>
+        <img
+          src="img/burger_1000x666.jpg"
+          alt="Burger"
+          title="Burger"
+          width="1000"
+          height="666"
+        />
+        <figcaption class="offscreen">Burger</figcaption>
+      </figure>
+    </section>
 
-      <dl>
-        <dt>Sunday-Thursday</dt>
-        <dd>
-          <time datetime="11:00">11am</time>-<time datetime="22:00">10pm</time>
-        </dd>
+    <main class="main">
+      <article class="main__article">
+        <h2>Hours</h2>
 
-        <dt>Friday-Saturday</dt>
-        <dd>
-          <time datetime="12:00">12am</time>-<time datetime="00:00">12pm</time>
-        </dd>
-      </dl>
+        <p>We are open 7 days a week!</p>
+        <br />
+
+        <dl>
+          <dt>Sunday-Thursday</dt>
+          <dd>
+            <time datetime="11:00">11am</time>-<time datetime="22:00"
+              >10pm</time
+            >
+          </dd>
+
+          <br />
+          <dt>Friday-Saturday</dt>
+          <dd>
+            <time datetime="12:00">12am</time>-<time datetime="00:00"
+              >12pm</time
+            >
+          </dd>
+        </dl>
+      </article>
     </main>
 
-    <footer>
+    <footer class="footer">
+      <p>
+        <span class="nowrap">Copyright &copy; <time id="year"></time></span>
+        <span class="nowrap">Papa's Burgers</span>
+      </p>
       <p><a href="#">Back to top</a></p>
-      <hr />
-
-      <p>&lt;&lt;&lt; Copyright &copy; Papa's Burgers &gt;&gt;&gt;</p>
     </footer>
   </body>
 </html>

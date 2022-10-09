@@ -11,161 +11,116 @@
     />
 
     <link rel="icon" href="favicon.ico" type="image/x-icon" />
+    <link rel="stylesheet" href="css/style.css" />
+    <script src="js/main.js" defer></script>
+
     <title>Papa's Burgers</title>
-
-    <style>
-      html {
-        font-size: 22px;
-      }
-
-      body {
-        min-height: 100vh;
-        max-width: 800px;
-        margin: 0 auto;
-        padding: 1rem;
-        border-left: 1px solid #333;
-        border-right: 1px solid #333;
-      }
-
-      th,
-      td,
-      caption {
-        border: 1px solid #333;
-        font-family: "Courier New", Courier, monospace;
-        border-collapse: separate;
-        padding: 0.5rem;
-      }
-    </style>
   </head>
 
   <body>
-    <header>
-      <h1>Welcome to Papa's Burgers</h1>
+    <header class="header">
+      <h1 class="header__h1">Papa's Burgers</h1>
 
-      <nav aria-label="primary-navigation">
-        <ul>
-          <li><a href="#about-pb">About Papa's Burgers</a></li>
-          <li><a href="#our-menu">Our Menu</a></li>
-          <li><a href="hours.html">Opening Hours</a></li>
-          <li><a href="contact.html">Contact Us</a></li>
+      <nav class="header__nav" aria-label="primary-navigation">
+        <ul class="header__ul">
+          <li><a href="#our-menu">Menu</a></li>
+          <li><a href="hours.html">Hours</a></li>
+          <li><a href="contact.html">Contact</a></li>
+          <li><a href="about.html">About</a></li>
         </ul>
-
-        <figure>
-          <img
-            src="img/burger_and_fries_400x267.jpg"
-            alt="burger and fries"
-            title="Burger and Fries"
-            width="400"
-            height="267"
-          />
-          <figcaption>Burger and Fries</figcaption>
-        </figure>
       </nav>
     </header>
-    <hr />
 
-    <main>
-      <article id="about-pb">
-        <h2>About <abbr title="Papa's Burgers">PB's</abbr></h2>
-        <p>
-          <abbr title="Papa's Burgers">PB's</abbr> was founded in
-          <time datetime="2011">2011</time>. Our restaurant focuses on making
-          <strong>burgers with love</strong> 🍔🍔🍔. We make burgers from
-          scratch only with ingredients from local farms and suppliers. Visit us
-          and see yourself!
-        </p>
+    <section class="hero">
+      <h2 class="hero__h2">Welcome!</h2>
+      <figure>
+        <img
+          src="img/burger_and_fries_1000x667.jpg"
+          alt="burger and fries"
+          title="Burger and Fries"
+          width="1000"
+          height="667"
+        />
+        <figcaption class="offscreen">Burger and Fries</figcaption>
+      </figure>
+    </section>
 
-        <aside>
-          <h3>Burger Trivia</h3>
-          <details>
-            <summary>When and by who was the burger invented?</summary>
-            <p>
-              Made by Seymour Fair in <time datetime="1885">1885</time>. He
-              squashed a beef meatball between slices of bread so hus customers
-              could walk around eating. <br />
-              (Source:
-              <cite>
-                <a
-                  href="https://www.foodandwine.com/comfort-food/burgers/burger-timeline"
-                  target="_blank"
-                  >Food and Wine</a
-                ></cite
-              >)
-            </p>
-          </details>
-        </aside>
-      </article>
-      <hr />
+    <main class="main">
+      <article id="our-menu" class="main__article menu">
+        <h2 class="menu__h2">Our Menu</h2>
 
-      <article id="our-menu">
-        <h2>Our Menu</h2>
-
-        <table>
-          <caption>
+        <table class="menu__container">
+          <caption class="offscreen">
             Our Burgers
           </caption>
 
           <thead>
             <tr>
-              <th>Burgers</th>
-              <th scope="col"><abbr title="Quantity">Qty</abbr></th>
-              <th scope="col">Price</th>
+              <th class="menu__header" scope="col">Burgers</th>
+              <th class="menu__header" scope="col">Quantity</th>
+              <th class="menu__header" scope="col">Price</th>
             </tr>
           </thead>
 
           <tbody>
             <tr>
-              <th scope="row" rowspan="3">Classic</th>
-              <td>1</td>
-              <td>$7.99</td>
+              <th class="menu__item menu__classic" scope="row" rowspan="3">
+                Classic
+              </th>
+              <td class="menu__item">1</td>
+              <td class="menu__item">$7.99</td>
             </tr>
 
             <tr>
-              <td>2</td>
-              <td>$14.99</td>
+              <td class="menu__item">2</td>
+              <td class="menu__item">$14.99</td>
             </tr>
 
             <tr>
-              <td>3</td>
-              <td>$19.99</td>
+              <td class="menu__item">3</td>
+              <td class="menu__item">$19.99</td>
             </tr>
 
             <tr>
-              <th scope="row" rowspan="3">Cheeseburger</th>
-              <td>1</td>
-              <td>$8.99</td>
+              <th class="menu__item menu__cheeseburger" scope="row" rowspan="3">
+                Cheeseburger
+              </th>
+              <td class="menu__item">1</td>
+              <td class="menu__item">$8.99</td>
             </tr>
 
             <tr>
-              <td>2</td>
-              <td>$15.99</td>
+              <td class="menu__item">2</td>
+              <td class="menu__item">$15.99</td>
             </tr>
 
             <tr>
-              <td>3</td>
-              <td>$20.99</td>
+              <td class="menu__item">3</td>
+              <td class="menu__item">$20.99</td>
             </tr>
 
             <tr>
-              <th scope="row" rowspan="3">Smashburger</th>
-              <td>1</td>
-              <td>$6.99</td>
+              <th class="menu__item menu__smashburger" scope="row" rowspan="3">
+                Smashburger
+              </th>
+              <td class="menu__item">1</td>
+              <td class="menu__item">$6.99</td>
             </tr>
 
             <tr>
-              <td>2</td>
-              <td>$12.99</td>
+              <td class="menu__item">2</td>
+              <td class="menu__item">$12.99</td>
             </tr>
 
             <tr>
-              <td>3</td>
-              <td>$17.99</td>
+              <td class="menu__item">3</td>
+              <td class="menu__item">$17.99</td>
             </tr>
           </tbody>
 
           <tfoot>
             <tr>
-              <td colspan="3">
+              <td class="menu__item menu__fd" colspan="3">
                 Fries &amp; Dip of your choice only $2.99 per burger!
               </td>
             </tr>
@@ -174,11 +129,12 @@
       </article>
     </main>
 
-    <footer>
+    <footer class="footer">
+      <p>
+        <span class="nowrap">Copyright &copy; <time id="year"></time></span>
+        <span class="nowrap">Papa's Burgers</span>
+      </p>
       <p><a href="#">Back to top</a></p>
-      <hr />
-
-      <p>&lt;&lt;&lt; Copyright &copy; Papa's Burgers &gt;&gt;&gt;</p>
     </footer>
   </body>
 </html>

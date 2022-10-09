@@ -5,106 +5,101 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="author" content="Patrik Zezulka" />
-    <meta
-      name="description"
-      content="Papa's burgers - the best burgers in town."
-    />
+    <meta name="description" content="Papa's burgers - contact" />
 
     <link rel="icon" href="favicon.ico" type="image/x-icon" />
+    <link rel="stylesheet" href="css/style.css" />
+    <script src="js/main.js" defer></script>
+
     <title>PB's Contact Us</title>
-
-    <style>
-      html {
-        font-size: 22px;
-      }
-
-      body {
-        min-height: 100vh;
-        max-width: 800px;
-        margin: 0 auto;
-        padding: 1rem;
-        border-left: 1px solid #333;
-        border-right: 1px solid #333;
-      }
-
-      th,
-      td,
-      caption {
-        border: 1px solid #333;
-        font-family: "Courier New", Courier, monospace;
-        border-collapse: separate;
-        padding: 0.5rem;
-      }
-    </style>
   </head>
 
   <body>
-    <header>
-      <h1>Contact Us</h1>
+    <header class="header">
+      <h1 class="header__h1">Papa's Burgers</h1>
 
-      <nav aria-label="primary-navigation">
-        <ul>
+      <nav class="header__nav" aria-label="primary-navigation">
+        <ul class="header__ul">
           <!-- <a href="/"> ... also links to main page-->
-          <li><a href="index.html">Home</a></li>
-          <li><a href="index.html#about-pb">About Papa's Burgers</a></li>
-          <li><a href="index.html#our-menu">Our Menu</a></li>
-          <li><a href="hours.html">Opening Hours</a></li>
+          <li><a href="/">Home</a></li>
+          <li><a href="/#our-menu">Menu</a></li>
+          <li><a href="hours.html">Hours</a></li>
+          <li><a href="about.html">About</a></li>
         </ul>
-
-        <figure>
-          <img
-            src="img/burger_400x267.jpg"
-            alt="burger in sesame bun"
-            title="Burger in Sesame Bun"
-            width="400"
-            height="267"
-          />
-          <figcaption>Burger in Sesame Bun</figcaption>
-        </figure>
       </nav>
     </header>
-    <hr />
 
-    <main>
-      <section id="contact-form">
-        <h2>Our Contact Form</h2>
+    <section class="hero">
+      <figure>
+        <img
+          src="img/burger_plate_1000x659.jpg"
+          alt="Burger plate"
+          title="Burger plate"
+          width="1000"
+          height="659"
+        />
+        <figcaption class="offscreen">Burger plate</figcaption>
+      </figure>
+    </section>
 
-        <form action="https://httpbin.org/post" method="post">
-          <fieldset>
-            <legend>Send Us a Message</legend>
+    <main class="main">
+      <article class="main__article" id="location">
+        <h2>Our Location</h2>
 
-            <p>
-              <label for="name">Name:</label>
+        <address>
+          <p>Sezamme street 725, <br />75725 City of Burgers</p>
+          <p>
+            <br />
+            Phone: <a href="tel:+425687958421">+425 687 958 421</a>
+          </p>
+        </address>
+      </article>
+      <hr />
+
+      <article class="main__article contact" id="contact-form">
+        <h2 class="contact__h2">Our Contact Form</h2>
+
+        <form
+          action="https://httpbin.org/post"
+          method="post"
+          class="contact__form"
+        >
+          <fieldset class="contact__fieldset">
+            <legend class="offscreen">Send Us a Message</legend>
+
+            <p class="contact__p">
+              <label class="contact__label" for="name">Name:</label>
 
               <input
+                class="contact__input"
                 type="text"
                 name="name"
                 id="name"
-                placeholder="your name"
+                placeholder="Your name"
                 autocomplete="on"
                 required
-                autofocus
               />
             </p>
 
-            <p>
-              <label for="email">Email:</label>
+            <p class="contact__p">
+              <label class="contact__label" for="email">Email:</label>
 
               <input
+                class="contact__input"
                 type="email"
                 name="email"
                 id="email"
-                placeholder="your email"
+                placeholder="Your email"
                 autocomplete="on"
                 required
               />
             </p>
 
-            <p>
-              <label for="message">Your Message:</label>
-              <br />
+            <p class="contact__p">
+              <label class="contact__label" for="message">Your Message:</label>
 
               <textarea
+                class="contact__textarea"
                 name="message"
                 id="message"
                 cols="30"
@@ -115,26 +110,18 @@
           </fieldset>
 
           <!-- Buttons MUST BE in the form tag!-->
-          <button type="submit">Submit</button>
-          <button type="reset">Reset</button>
+          <button class="contact__button" type="submit">Submit</button>
+          <button class="contact__button" type="reset">Reset</button>
         </form>
-      </section>
-
-      <section id="location">
-        <h2>Our Location</h2>
-
-        <address>
-          <p>Sezamme street 725, <br />75725 City of Burgers</p>
-          <p>Phone: <a href="tel:+425687958421">+425 687 958 421</a></p>
-        </address>
-      </section>
+      </article>
     </main>
 
-    <footer>
+    <footer class="footer">
+      <p>
+        <span class="nowrap">Copyright &copy; <time id="year"></time></span>
+        <span class="nowrap">Papa's Burgers</span>
+      </p>
       <p><a href="#">Back to top</a></p>
-      <hr />
-
-      <p>&lt;&lt;&lt; Copyright &copy; Papa's Burgers &gt;&gt;&gt;</p>
     </footer>
   </body>
 </html>
