@@ -1,2 +1,3 @@
 # burger_page
-Simple HTML page using mainly HTML (very little CSS). Created as a practise for HTML.
+
+Coming back to page created just with HTML. Adding some styling with CSS and automatic year update. Final project of a CSS course.
