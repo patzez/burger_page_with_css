@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="author" content="Patrik Zezulka" />
+    <meta
+      name="description"
+      content="Papa's burgers - the best burgers in town."
+    />
+
+    <link rel="icon" href="favicon.ico" type="image/x-icon" />
+    <title>Papa's Burgers</title>
+
+    <style>
+      html {
+        font-size: 22px;
+      }
+
+      body {
+        min-height: 100vh;
+        max-width: 800px;
+        margin: 0 auto;
+        padding: 1rem;
+        border-left: 1px solid #333;
+        border-right: 1px solid #333;
+      }
+
+      th,
+      td,
+      caption {
+        border: 1px solid #333;
+        font-family: "Courier New", Courier, monospace;
+        border-collapse: separate;
+        padding: 0.5rem;
+      }
+    </style>
+  </head>
+
+  <body>
+    <header>
+      <h1>Welcome to Papa's Burgers</h1>
+
+      <nav aria-label="primary-navigation">
+        <ul>
+          <li><a href="#about-pb">About Papa's Burgers</a></li>
+          <li><a href="#our-menu">Our Menu</a></li>
+          <li><a href="hours.html">Opening Hours</a></li>
+          <li><a href="contact.html">Contact Us</a></li>
+        </ul>
+
+        <figure>
+          <img
+            src="img/burger_and_fries_400x267.jpg"
+            alt="burger and fries"
+            title="Burger and Fries"
+            width="400"
+            height="267"
+          />
+          <figcaption>Burger and Fries</figcaption>
+        </figure>
+      </nav>
+    </header>
+    <hr />
+
+    <main>
+      <article id="about-pb">
+        <h2>About <abbr title="Papa's Burgers">PB's</abbr></h2>
+        <p>
+          <abbr title="Papa's Burgers">PB's</abbr> was founded in
+          <time datetime="2011">2011</time>. Our restaurant focuses on making
+          <strong>burgers with love</strong> 🍔🍔🍔. We make burgers from
+          scratch only with ingredients from local farms and suppliers. Visit us
+          and see yourself!
+        </p>
+
+        <aside>
+          <h3>Burger Trivia</h3>
+          <details>
+            <summary>When and by who was the burger invented?</summary>
+            <p>
+              Made by Seymour Fair in <time datetime="1885">1885</time>. He
+              squashed a beef meatball between slices of bread so hus customers
+              could walk around eating. <br />
+              (Source:
+              <cite>
+                <a
+                  href="https://www.foodandwine.com/comfort-food/burgers/burger-timeline"
+                  target="_blank"
+                  >Food and Wine</a
+                ></cite
+              >)
+            </p>
+          </details>
+        </aside>
+      </article>
+      <hr />
+
+      <article id="our-menu">
+        <h2>Our Menu</h2>
+
+        <table>
+          <caption>
+            Our Burgers
+          </caption>
+
+          <thead>
+            <tr>
+              <th>Burgers</th>
+              <th scope="col"><abbr title="Quantity">Qty</abbr></th>
+              <th scope="col">Price</th>
+            </tr>
+          </thead>
+
+          <tbody>
+            <tr>
+              <th scope="row" rowspan="3">Classic</th>
+              <td>1</td>
+              <td>$7.99</td>
+            </tr>
+
+            <tr>
+              <td>2</td>
+              <td>$14.99</td>
+            </tr>
+
+            <tr>
+              <td>3</td>
+              <td>$19.99</td>
+            </tr>
+
+            <tr>
+              <th scope="row" rowspan="3">Cheeseburger</th>
+              <td>1</td>
+              <td>$8.99</td>
+            </tr>
+
+            <tr>
+              <td>2</td>
+              <td>$15.99</td>
+            </tr>
+
+            <tr>
+              <td>3</td>
+              <td>$20.99</td>
+            </tr>
+
+            <tr>
+              <th scope="row" rowspan="3">Smashburger</th>
+              <td>1</td>
+              <td>$6.99</td>
+            </tr>
+
+            <tr>
+              <td>2</td>
+              <td>$12.99</td>
+            </tr>
+
+            <tr>
+              <td>3</td>
+              <td>$17.99</td>
+            </tr>
+          </tbody>
+
+          <tfoot>
+            <tr>
+              <td colspan="3">
+                Fries &amp; Dip of your choice only $2.99 per burger!
+              </td>
+            </tr>
+          </tfoot>
+        </table>
+      </article>
+    </main>
+
+    <footer>
+      <p><a href="#">Back to top</a></p>
+      <hr />
+
+      <p>&lt;&lt;&lt; Copyright &copy; Papa's Burgers &gt;&gt;&gt;</p>
+    </footer>
+  </body>
+</html>

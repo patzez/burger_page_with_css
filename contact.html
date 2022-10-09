@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="author" content="Patrik Zezulka" />
+    <meta
+      name="description"
+      content="Papa's burgers - the best burgers in town."
+    />
+
+    <link rel="icon" href="favicon.ico" type="image/x-icon" />
+    <title>PB's Contact Us</title>
+
+    <style>
+      html {
+        font-size: 22px;
+      }
+
+      body {
+        min-height: 100vh;
+        max-width: 800px;
+        margin: 0 auto;
+        padding: 1rem;
+        border-left: 1px solid #333;
+        border-right: 1px solid #333;
+      }
+
+      th,
+      td,
+      caption {
+        border: 1px solid #333;
+        font-family: "Courier New", Courier, monospace;
+        border-collapse: separate;
+        padding: 0.5rem;
+      }
+    </style>
+  </head>
+
+  <body>
+    <header>
+      <h1>Contact Us</h1>
+
+      <nav aria-label="primary-navigation">
+        <ul>
+          <!-- <a href="/"> ... also links to main page-->
+          <li><a href="index.html">Home</a></li>
+          <li><a href="index.html#about-pb">About Papa's Burgers</a></li>
+          <li><a href="index.html#our-menu">Our Menu</a></li>
+          <li><a href="hours.html">Opening Hours</a></li>
+        </ul>
+
+        <figure>
+          <img
+            src="img/burger_400x267.jpg"
+            alt="burger in sesame bun"
+            title="Burger in Sesame Bun"
+            width="400"
+            height="267"
+          />
+          <figcaption>Burger in Sesame Bun</figcaption>
+        </figure>
+      </nav>
+    </header>
+    <hr />
+
+    <main>
+      <section id="contact-form">
+        <h2>Our Contact Form</h2>
+
+        <form action="https://httpbin.org/post" method="post">
+          <fieldset>
+            <legend>Send Us a Message</legend>
+
+            <p>
+              <label for="name">Name:</label>
+
+              <input
+                type="text"
+                name="name"
+                id="name"
+                placeholder="your name"
+                autocomplete="on"
+                required
+                autofocus
+              />
+            </p>
+
+            <p>
+              <label for="email">Email:</label>
+
+              <input
+                type="email"
+                name="email"
+                id="email"
+                placeholder="your email"
+                autocomplete="on"
+                required
+              />
+            </p>
+
+            <p>
+              <label for="message">Your Message:</label>
+              <br />
+
+              <textarea
+                name="message"
+                id="message"
+                cols="30"
+                rows="10"
+                placeholder="Type your Message here"
+              ></textarea>
+            </p>
+          </fieldset>
+
+          <!-- Buttons MUST BE in the form tag!-->
+          <button type="submit">Submit</button>
+          <button type="reset">Reset</button>
+        </form>
+      </section>
+
+      <section id="location">
+        <h2>Our Location</h2>
+
+        <address>
+          <p>Sezamme street 725, <br />75725 City of Burgers</p>
+          <p>Phone: <a href="tel:+425687958421">+425 687 958 421</a></p>
+        </address>
+      </section>
+    </main>
+
+    <footer>
+      <p><a href="#">Back to top</a></p>
+      <hr />
+
+      <p>&lt;&lt;&lt; Copyright &copy; Papa's Burgers &gt;&gt;&gt;</p>
+    </footer>
+  </body>
+</html>

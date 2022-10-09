@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="author" content="Patrik Zezulka" />
+    <meta
+      name="description"
+      content="Opening Hours for the Papa's burgers - the best burgers in town."
+    />
+
+    <link rel="icon" href="favicon.ico" type="image/x-icon" />
+    <title>PB's Opening Hours</title>
+
+    <style>
+      html {
+        font-size: 22px;
+      }
+
+      body {
+        min-height: 100vh;
+        max-width: 800px;
+        margin: 0 auto;
+        padding: 1rem;
+        border-left: 1px solid #333;
+        border-right: 1px solid #333;
+      }
+
+      th,
+      td,
+      caption {
+        border: 1px solid #333;
+        font-family: "Courier New", Courier, monospace;
+        border-collapse: separate;
+        padding: 0.5rem;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <h1>Papa's Burgers Opening Hours</h1>
+
+      <nav aria-label="primary-navigation">
+        <ul>
+          <!-- <a href="/"> ... also links to main page-->
+          <li><a href="index.html">Home</a></li>
+          <li><a href="index.html#about-pb">About Papa's Burgers</a></li>
+          <li><a href="index.html#our-menu">Our Menu</a></li>
+          <li><a href="contact.html">Contact Us</a></li>
+        </ul>
+
+        <figure>
+          <img
+            src="img/burger_egg_400x267.jpg"
+            alt="burger with egg"
+            title="Burger with Egg"
+            width="400"
+            height="267"
+          />
+          <figcaption>Burger with Egg</figcaption>
+        </figure>
+      </nav>
+    </header>
+    <hr />
+
+    <main>
+      <p>We are open 7 days a week!</p>
+
+      <dl>
+        <dt>Sunday-Thursday</dt>
+        <dd>
+          <time datetime="11:00">11am</time>-<time datetime="22:00">10pm</time>
+        </dd>
+
+        <dt>Friday-Saturday</dt>
+        <dd>
+          <time datetime="12:00">12am</time>-<time datetime="00:00">12pm</time>
+        </dd>
+      </dl>
+    </main>
+
+    <footer>
+      <p><a href="#">Back to top</a></p>
+      <hr />
+
+      <p>&lt;&lt;&lt; Copyright &copy; Papa's Burgers &gt;&gt;&gt;</p>
+    </footer>
+  </body>
+</html>
